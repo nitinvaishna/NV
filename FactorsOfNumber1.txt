@@ -28,6 +28,31 @@ class PrimeClass
             }
         }
     }
+    
+    static void primeFactors(int n)
+    {
+        while(n%2==0)
+        {
+            n = n/2;
+            System.out.print(2+ " ");
+        }
+        
+        for(int i=3;i<=Math.sqrt(n);i++)
+        {
+            if(n%i==0)
+            {
+                n = n/i;
+                System.out.print(i+" ");
+            }
+         }
+         
+         if(n>1)
+         {
+            System.out.print(n + " ");
+         }
+         System.out.println();
+     }
+      
     public static void main(String[] args) 
     {
         System.out.println("Hello, World!");
@@ -36,5 +61,13 @@ class PrimeClass
         factors(20);
         System.out.println("ok");
         factorsSqrt(30);
+        
+        System.out.println("ok");
+        primeFactors(71);
+        System.out.println("ok");
+        primeFactors(83);
+        System.out.println("ok");
+        primeFactors(21);
+        
     }
 }
