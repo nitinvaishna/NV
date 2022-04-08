@@ -1,6 +1,6 @@
 // Online Java Compiler
 // Use this editor to write, compile and run your Java code online
-
+// T = sqrt(n)   S = O(1)
 class PrimeClass 
 {
     static void factors(int n)
