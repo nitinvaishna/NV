@@ -1,0 +1,40 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
+class PrimeClass 
+{
+    static void factors(int n)
+    {
+        for(int i=1;i<=n;i++)
+        {
+            if(n%i==0)
+            {
+                 System.out.print(i + " ");
+            }
+        }
+    }
+    
+    static void factorsSqrt(int n)
+    {
+        for(int i = 1; i<=Math.sqrt(n); i++)
+        {
+            if(n%i==0)
+            {
+                System.out.print(i + " ");
+                if(n/i!=0)  //this is to remove duplicate
+                {
+                 System.out.println(n/i + " ");   
+                }
+            }
+        }
+    }
+    public static void main(String[] args) 
+    {
+        System.out.println("Hello, World!");
+        factors(10);
+        System.out.println("ok");
+        factors(20);
+        System.out.println("ok");
+        factorsSqrt(30);
+    }
+}
